@@ -16,4 +16,10 @@ class AppImages {
   static const settingsIcon = "${imagePath}settings_ic.png";
   static const drawerIcon = "${imagePath}drawer_ic.png";
   static const carIcon="${imagePath}car_ic.png";
+  static const editIcon="${imagePath}edit_ic.png";
+  static const disableIcon="${imagePath}disable_ic.png";
+  static const protectIcon="${imagePath}protect_ic.png";
+  static const successIcon="${imagePath}success_ic.png";
+  
+
 }

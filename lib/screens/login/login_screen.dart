@@ -122,21 +122,29 @@ class _LoginPageState extends State<LoginPage> {
                         SimpleButton(
                           titleButton: "Log in",
                           color: const Color(0XFF613EEA),
-                          onPressed: () {
-                            if (_emailController.text.isEmpty ||
-                                _passwordController.text.isEmpty) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                    content:
-                                        Text("Vui lòng điền đầy đủ thông tin")),
-                              );
-                            } else if (_emailController.text.isNotEmpty &&
-                                _passwordController.text.isNotEmpty) {
-                              _login();
-                            }
+                          onPressed: () async {
+                            // if (_emailController.text.isEmpty ||
+                            //     _passwordController.text.isEmpty) {
+                            //   ScaffoldMessenger.of(context).showSnackBar(
+                            //     const SnackBar(
+                            //         content:
+                            //             Text("Vui lòng điền đầy đủ thông tin")),
+                            //   );
+                            // } else if (_emailController.text.isNotEmpty &&
+                            //     _passwordController.text.isNotEmpty) {
+                            //   _login();
+                            // }
+                            AppFunction.showLoading(context);
+                            await Future.delayed(
+                                const Duration(milliseconds: 1500));
+                            Navigator.pushNamed(
+                              context,
+                              AppRouters.dashBoard,
+                            );
+                            AppFunction.hideLoading(context);
                           },
                         ),
-                        const SizedBox( 
+                        const SizedBox(
                           height: 10,
                         ),
                         RichText(

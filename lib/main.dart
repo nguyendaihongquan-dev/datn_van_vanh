@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                         useMaterial3: false,
                       ),
                       debugShowCheckedModeBanner: false,
-                      initialRoute: AppRouters.dashBoard,
+                      initialRoute: AppRouters.firstScreen,
                       // Sử dụng StreamBuilder để theo dõi trạng thái đăng nhập
                       // home: StreamBuilder<User?>(
                       //   stream: FirebaseAuth.instance.authStateChanges(),
