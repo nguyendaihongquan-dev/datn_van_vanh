@@ -1,9 +1,8 @@
-
 import 'package:datn_van_vanh/app/app_routers.dart';
 import 'package:datn_van_vanh/provider/user_provider.dart';
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:datn_van_vanh/res/fonts/app_fonts.dart';
 import 'package:datn_van_vanh/res/images/app_images.dart';
-import 'package:datn_van_vanh/themes/app_colors.dart';
 import 'package:datn_van_vanh/util/app_function.dart';
 import 'package:datn_van_vanh/widget/simple_button.dart';
 import 'package:datn_van_vanh/widget/simple_input.dart';
@@ -72,19 +71,12 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    AppImages.logoEV,
+                    AppImages.logo,
                     width: 150,
                     height: 150,
                   ),
                   const SizedBox(
                     height: 30,
-                  ),
-                  Text(
-                    "Login to your account",
-                    style: AppFonts.quicksand700(
-                      24,
-                      AppColors.kPrimary,
-                    ),
                   ),
                 ],
               ),
@@ -96,24 +88,40 @@ class _LoginPageState extends State<LoginPage> {
                     child: Column(
                       children: [
                         SimpleInput(
-                          titleInput: "Email",
-                          labelText: "Enter your email",
+                          titleInput: "",
+                          hintText: "Phone number",
                           controller: _emailController,
                         ),
                         const SizedBox(
                           height: 20,
                         ),
                         SimpleInput(
-                          titleInput: "Password",
-                          labelText: "Enter your password",
+                          titleInput: "",
+                          hintText: "Password",
                           controller: _passwordController,
                           obscureText: true,
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Row(
+                          children: [
+                            const Spacer(),
+                            Text(
+                              "Forgot Password?",
+                              style: AppFonts.regular(
+                                16,
+                                const Color(0xFF613EEA),
+                              ),
+                            )
+                          ],
                         ),
                         const SizedBox(
                           height: 30,
                         ),
                         SimpleButton(
                           titleButton: "Log in",
+                          color: const Color(0XFF613EEA),
                           onPressed: () {
                             if (_emailController.text.isEmpty ||
                                 _passwordController.text.isEmpty) {
@@ -127,30 +135,33 @@ class _LoginPageState extends State<LoginPage> {
                               _login();
                             }
                           },
+                        ),
+                        const SizedBox( 
+                          height: 10,
+                        ),
+                        RichText(
+                          text: TextSpan(
+                            children: [
+                              TextSpan(
+                                text: "or ",
+                                style: AppFonts.openSansMedium500(
+                                  16,
+                                  const Color(0xFF212121).withOpacity(0.6),
+                                ),
+                              ),
+                              TextSpan(
+                                text: "Signup",
+                                style: AppFonts.openSansMedium500(
+                                  16,
+                                  AppColors.defaultColor,
+                                ),
+                              ),
+                            ],
+                          ),
                         )
                       ],
                     ),
                   ),
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "Don't have an account? ",
-                          style: AppFonts.quicksandMedium500(
-                            16,
-                            const Color(0xFF212121).withOpacity(0.6),
-                          ),
-                        ),
-                        TextSpan(
-                          text: "Create account",
-                          style: AppFonts.quicksandMedium500(
-                            16,
-                            AppColors.kPrimary,
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
                 ],
               ),
             )

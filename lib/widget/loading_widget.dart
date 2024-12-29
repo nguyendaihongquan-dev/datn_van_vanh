@@ -1,9 +1,10 @@
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:datn_van_vanh/res/images/app_images.dart';
 import 'package:datn_van_vanh/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class LoadingWidget extends StatelessWidget {
-  const LoadingWidget({super.key});
+  const  LoadingWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class LoadingWidget extends StatelessWidget {
           Positioned.fill(
               child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Image.asset(AppImages.logoEV),
+            child: Image.asset(AppImages.logo),
           )),
         ],
       )),

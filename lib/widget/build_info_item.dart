@@ -1,4 +1,4 @@
-import 'package:datn_van_vanh/themes/app_colors.dart';
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class BuildInfoItem extends StatelessWidget {

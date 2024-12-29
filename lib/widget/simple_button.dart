@@ -1,8 +1,6 @@
-
-
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:datn_van_vanh/res/fonts/app_fonts.dart';
 import 'package:datn_van_vanh/res/images/app_images.dart';
-import 'package:datn_van_vanh/themes/app_colors.dart';
 import 'package:datn_van_vanh/widget/touchable_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -37,10 +35,10 @@ class SimpleButton extends StatelessWidget {
                     ? Colors.white
                     : color ?? AppColors.kPrimary,
             border: isButtonWhite
-                ? Border.all(width: 1, color: AppColors.kPrimary)
+                ? Border.all(width: 1, color: const Color(0XFF613EEA))
                 : haveIcon
-                    ? Border.all(width: 1, color: AppColors.kPrimary)
-                    : Border.all(width: 2.5, color: AppColors.kPrimary),
+                    ? Border.all(width: 1, color: const Color(0XFF613EEA))
+                    : Border.all(width: 2.5, color: const Color(0XFF613EEA)),
             borderRadius: BorderRadius.circular(8)),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 11),
@@ -48,9 +46,9 @@ class SimpleButton extends StatelessWidget {
               ? Text(
                   titleButton ?? "Tạo đơn và giao hàng",
                   textAlign: TextAlign.center,
-                  style: AppFonts.bold(
+                  style: AppFonts.openSansBold900(
                     16,
-                    isButtonWhite ? AppColors.kPrimary : color ?? Colors.white,
+                    Colors.white,
                   ),
                 )
               : Row(
@@ -58,7 +56,7 @@ class SimpleButton extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Image.asset(
-                        AppImages.logOutIc,
+                        AppImages.iconEye,
                         height: 20,
                         width: 20,
                         fit: BoxFit.fill,
@@ -72,9 +70,9 @@ class SimpleButton extends StatelessWidget {
                       child: Text(
                         titleButton ?? "Lưu tạm",
                         textAlign: TextAlign.center,
-                        style: AppFonts.bold(
+                        style: AppFonts.openSansBold900(
                           16,
-                          AppColors.kPrimary,
+                          const Color(0XFF613EEA),
                         ),
                       ),
                     ),

@@ -1,14 +1,9 @@
-
-import 'package:datn_van_vanh/model/device_model.dart';
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:datn_van_vanh/res/fonts/app_fonts.dart';
 import 'package:datn_van_vanh/res/images/app_images.dart';
-import 'package:datn_van_vanh/screens/home/device_card.dart';
-import 'package:datn_van_vanh/screens/home/quick_action.dart';
-import 'package:datn_van_vanh/screens/home/room_card.dart';
-import 'package:datn_van_vanh/screens/home/summary_header.dart';
-import 'package:datn_van_vanh/themes/app_colors.dart';
+import 'package:datn_van_vanh/widget/simple_button.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_database/firebase_database.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -18,164 +13,432 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  double tempData = 0;
-  double humiData = 0;
-  
-
-  Future<void> _initData() async {
-    DatabaseReference tempFirebase =
-        FirebaseDatabase.instance.ref('/monitor').child('temp');
-    DatabaseReference humiFirebase =
-        FirebaseDatabase.instance.ref('/monitor').child('humi');
-
-    tempFirebase.onValue.listen((event) {
-      var data = event.snapshot.value;
-      setState(() {
-        tempData = double.parse(data.toString());
-      });
-    });
-
-    humiFirebase.onValue.listen((event) {
-      var data = event.snapshot.value;
-      setState(() {
-        humiData = double.parse(data.toString());
-      });
-    });
-  }
-
-  
-
-  @override
-  void initState() {
-    _initializeData();
-   
-    super.initState();
-  }
-
-  Future<void> _initializeData() async {
-    await _initData();
-  }
-
+  bool _switchValue = true;
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          SizedBox(height: 32 + MediaQuery.of(context).padding.top),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Expanded(
-                child: Text(
-                  'Good Morning, Codefarmer',
-                  style: AppFonts.quicksand700(
-                    18,
-                    AppColors.black,
-                  ),
-                ),
-              ),
-              Row(
-                children: [
-                  IconButton(
-                      onPressed: () {
-                        // provider.changeMode();
-                      },
-                      icon: const Icon(Icons.lightbulb)),
-                  GestureDetector(
-                    onTap: () {
-                      //  AppNavigator.pushNamed(
-                      // profileRoute,
-                      // // arguments: Icon(
-                      // //   Icons.notifications_outlined,
-                      // //   color: color.tertiary,
-                      // // ),
-                    },
-                    child: const CircleAvatar(
-                      radius: 24,
-                      backgroundImage: AssetImage(AppImages.profile),
-                    ),
+    return Scaffold(
+      body: Padding(
+        padding: EdgeInsets.symmetric(
+          vertical: MediaQuery.of(context).padding.top,
+          horizontal: 16,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              AppImages.drawerIcon,
+              width: 22,
+              height: 22,
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(6),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0x7A7A7B52)
+                        .withOpacity(0.5), // Màu bóng (ARGB)
+                    offset: const Offset(0, 0),
+                    blurRadius: 5, // Độ mờ của bóng
+                    spreadRadius: 0, // Không lan rộng
                   ),
                 ],
               ),
-            ],
-          ),
-          const SizedBox(height: 32),
-          SummaryHeader(
-            temp: tempData.toString(),
-            humi: humiData.toString(),
-          ),
-          const SizedBox(height: 32),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Quick Action',
-                // style: theme.typography.bodyCopyMedium,
+              padding: const EdgeInsets.all(12),
+              alignment: Alignment.center,
+              child: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Lekki Gardens Car Park A ",
+                      style: AppFonts.openSansMedium500(
+                        18,
+                        const Color(0xFF3B414B),
+                      ),
+                    ),
+                    TextSpan(
+                      text: "N200 ",
+                      style: AppFonts.openSansBold700(
+                        20,
+                        const Color(0XFF3B414B),
+                      ),
+                    ),
+                    TextSpan(
+                      text: "/Hr",
+                      style: AppFonts.openSansMedium500(
+                        16,
+                        const Color(0XFF757F8C),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              Text(
-                'Edit',
-                // style: theme.typography.bodyCopy,
-              )
-            ],
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              ...['Wake up', 'Sleep', 'Clean']
-                  .map((e) => QuickAction(action: e))
-            ],
-          ),
-          const SizedBox(height: 32),
-          const Text(
-            'Active Devices',
-          ),
-          const SizedBox(height: 16),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Text(
+                "Select preferred space",
+                style: AppFonts.regular(
+                  16,
+                  AppColors.defaultText,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(6),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0x7A7A7B52)
+                        .withOpacity(0.5), // Màu bóng (ARGB)
+                    offset: const Offset(0, 0),
+                    blurRadius: 5, // Độ mờ của bóng
+                    spreadRadius: 0, // Không lan rộng
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Text(
+                      "5 slots Available",
+                      style: AppFonts.openSansMedium500(
+                        16,
+                        AppColors.defaultText,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 350,
+                        width: 1,
+                        decoration: const BoxDecoration(
+                          color: Colors.black54,
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 16, horizontal: 16),
+                              child: Container(
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: AppColors.defaultColor,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    ),
+                                    Image.asset(
+                                      AppImages.carIcon,
+                                      width: 28,
+                                      height: 28,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ...devices.map(
-                  (e) => DeviceCard(
-                    device: e,
+                Text(
+                  "Reserve spot for another time",
+                  style: AppFonts.regular(
+                    16,
+                    const Color(0xFF757F8C),
+                  ),
+                ),
+                Transform.scale(
+                  scale: 1.2,
+                  child: Switch(
+                    activeColor: AppColors.defaultColor,
+                    value: _switchValue,
+                    onChanged: (bool value) {
+                      setState(() {
+                        _switchValue = value;
+                      });
+                    },
                   ),
                 ),
               ],
             ),
-          ),
-          const SizedBox(height: 32),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Rooms',
-              ),
-              Text(
-                'Edit',
-              )
-            ],
-          ),
-          const SizedBox(height: 16),
-          MediaQuery.removePadding(
-            context: context,
-            removeTop: true,
-            child: GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 16,
-                  mainAxisSpacing: 16,
-                  mainAxisExtent: 100,
-                ),
-                itemCount: 8,
-                itemBuilder: (BuildContext context, int index) {
-                  return const RoomCard();
-                }),
-          ),
-        ]),
+            const SizedBox(
+              height: 10,
+            ),
+            SimpleButton(
+              titleButton: "Continue",
+              color: const Color(0XFF613EEA),
+              onPressed: () {},
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -1,6 +1,6 @@
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:datn_van_vanh/res/fonts/app_fonts.dart';
 import 'package:datn_van_vanh/res/images/app_images.dart';
-import 'package:datn_van_vanh/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -19,6 +19,7 @@ class SimpleInput extends StatefulWidget {
     this.colorIcon,
     this.onTap,
     this.labelText,
+    this.hintText,
   });
   final String titleInput;
   final bool isPassword;
@@ -32,6 +33,7 @@ class SimpleInput extends StatefulWidget {
   final Color? colorIcon;
   final Function()? onTap;
   final String? labelText;
+  final String? hintText;
 
   @override
   State<SimpleInput> createState() => _SimpleInputState();
@@ -84,14 +86,14 @@ class _SimpleInputState extends State<SimpleInput> {
                         color: AppColors.red0,
                       ),
                     ),
-                    TextSpan(
-                      text: widget.titleInput
-                          .substring(widget.titleInput.indexOf('*') + 1),
-                      style: AppFonts.light(
-                        1,
-                        AppColors.grey500,
-                      ),
-                    ),
+                    // TextSpan(
+                    //   text: widget.titleInput
+                    //       .substring(widget.titleInput.indexOf('*') + 1),
+                    //   style: AppFonts.light(
+                    //     1,
+                    //     AppColors.grey500,
+                    //   ),
+                    // ),
                   ]
                 : [
                     TextSpan(
@@ -126,17 +128,24 @@ class _SimpleInputState extends State<SimpleInput> {
           obscureText: widget.isPassword ? widget.obscureText : false,
           decoration: InputDecoration(
             labelText: widget.labelText,
-            labelStyle: AppFonts.quicksandMedium500(
-                16, const Color(0xFF212121).withOpacity(0.6)),
-            border: InputBorder.none,
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: AppColors.kPrimary),
+            labelStyle: AppFonts.openSansMedium500(
+              16,
+              AppColors.defaultText,
             ),
-            errorStyle: AppFonts.light(12, AppColors.kPrimary).copyWith(),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(width: 1, color: Color(0xffB8B8D2)),
+            hintText: widget.hintText ?? "",
+            hintStyle: AppFonts.openSansMedium500(
+              16,
+              AppColors.defaultText,
+            ),
+            border: InputBorder.none,
+            focusedBorder: const UnderlineInputBorder(
+              // borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(color: AppColors.kPrimary),
+            ),
+            // errorStyle: AppFonts.light(12, AppColors.kPrimary).copyWith(),
+            enabledBorder: const UnderlineInputBorder(
+              // borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(width: 1, color: Color(0xffB8B8D2)),
             ),
             suffixIcon: widget.isPassword
                 ? Padding(

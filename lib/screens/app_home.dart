@@ -1,8 +1,7 @@
-
+import 'package:datn_van_vanh/res/colors/app_colors.dart';
+import 'package:datn_van_vanh/res/images/app_images.dart';
 import 'package:datn_van_vanh/screens/home/home_screen.dart';
-import 'package:datn_van_vanh/themes/app_colors.dart';
 import 'package:flutter/material.dart';
-
 
 class Dashboard extends StatefulWidget {
   final int initialTab;
@@ -63,27 +62,55 @@ class _DashboardState extends State<Dashboard>
         selectedItemColor: AppColors.kPrimary,
         unselectedItemColor: AppColors.grey400,
         enableFeedback: true,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              activeIcon: Icon(Icons.home_outlined),
-              label: "Home"),
+            icon: Image.asset(
+              AppImages.homeIcon,
+              width: 30,
+            ),
+            activeIcon: Image.asset(
+              AppImages.homeIcon,
+              width: 30,
+              color: AppColors.defaultColor,
+            ),
+            label: "",
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.phone_iphone_rounded),
-              activeIcon: Icon(Icons.phone_iphone_rounded),
-              label: "Device"),
+            icon: Image.asset(
+              AppImages.walletsIcon,
+              width: 30,
+            ),
+            activeIcon: Image.asset(
+              AppImages.walletsIcon,
+              color: AppColors.defaultColor,
+              width: 30,
+            ),
+            label: "",
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.keyboard_voice_outlined),
-              activeIcon: Icon(Icons.keyboard_voice_outlined),
-              label: "Voice"),
-          // BottomNavigationBarItem(
-          //     icon: Icon(Icons.replay_rounded),
-          //     activeIcon: Icon(Icons.replay_rounded),
-          //     label: "Routine"),
+            icon: Image.asset(
+              AppImages.reportsIcon,
+              width: 30,
+            ),
+            activeIcon: Image.asset(
+              AppImages.reportsIcon,
+              color: AppColors.defaultColor,
+              width: 30,
+            ),
+            label: "",
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.bar_chart_rounded),
-              activeIcon: Icon(Icons.bar_chart_rounded),
-              label: "Stats"),
+            icon: Image.asset(
+              AppImages.settingsIcon,
+              width: 30,
+            ),
+            activeIcon: Image.asset(
+              AppImages.settingsIcon,
+              color: AppColors.defaultColor,
+              width: 30,
+            ),
+            label: "",
+          ),
         ],
       ),
     );
