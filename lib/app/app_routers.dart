@@ -6,7 +6,7 @@ import 'package:datn_van_vanh/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouters {
-  static const String firstScreen = '/';
+  static const String firstScreen = '/firts';
   static const String splashScreen = '/splash';
   static const String dashBoard = '/dashBoard';
   static const String loginScreen = '/loginScreen';
@@ -18,6 +18,7 @@ class AppRouters {
     firstScreen: (BuildContext context) => const FirstScreen(),
     loginScreen: (BuildContext context) => const LoginPage(),
     dashBoard: (BuildContext context) => const Dashboard(),
+    homeScreen: (BuildContext context) => const Dashboard(),
     bookSpaceScreen: (BuildContext context) => const BookSpaceScreen(),
   };
 }

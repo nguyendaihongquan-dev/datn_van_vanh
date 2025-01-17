@@ -1,6 +1,7 @@
 import 'package:datn_van_vanh/app/app_routers.dart';
 import 'package:datn_van_vanh/firebase_options.dart';
 import 'package:datn_van_vanh/provider/loading_provider.dart';
+import 'package:datn_van_vanh/provider/manager_provider.dart';
 import 'package:datn_van_vanh/provider/user_provider.dart';
 import 'package:datn_van_vanh/screens/app_home.dart';
 import 'package:datn_van_vanh/screens/login/login_screen.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => LoadingProvider()),
         ChangeNotifierProvider(create: (_) => UserProvider()),
+        ChangeNotifierProvider(create: (_) => ManagerProvider()),
       ],
       builder: (context, _) {
         return Consumer<LoadingProvider>(
@@ -47,6 +49,7 @@ class MyApp extends StatelessWidget {
                         useMaterial3: false,
                       ),
                       debugShowCheckedModeBanner: false,
+                      // home: Dashboard(),
                       initialRoute: AppRouters.firstScreen,
                       // Sử dụng StreamBuilder để theo dõi trạng thái đăng nhập
                       // home: StreamBuilder<User?>(

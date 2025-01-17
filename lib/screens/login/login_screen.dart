@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.pushNamed(
         // ignore: use_build_context_synchronously
         context,
-        AppRouters.dashBoard,
+        AppRouters.homeScreen,
       );
     } on FirebaseAuthException catch (e) {
       // ignore: use_build_context_synchronously
@@ -89,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                       children: [
                         SimpleInput(
                           titleInput: "",
-                          hintText: "Phone number",
+                          hintText: "Email",
                           controller: _emailController,
                         ),
                         const SizedBox(
@@ -123,24 +123,22 @@ class _LoginPageState extends State<LoginPage> {
                           titleButton: "Log in",
                           color: const Color(0XFF613EEA),
                           onPressed: () async {
-                            // if (_emailController.text.isEmpty ||
-                            //     _passwordController.text.isEmpty) {
-                            //   ScaffoldMessenger.of(context).showSnackBar(
-                            //     const SnackBar(
-                            //         content:
-                            //             Text("Vui lòng điền đầy đủ thông tin")),
-                            //   );
-                            // } else if (_emailController.text.isNotEmpty &&
-                            //     _passwordController.text.isNotEmpty) {
-                            //   _login();
-                            // }
+                            if (_emailController.text.trim().isEmpty ||
+                                _passwordController.text.trim().isEmpty) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                    content:
+                                        Text("Vui lòng điền đầy đủ thông tin")),
+                              );
+                            } else if (_emailController.text
+                                    .trim()
+                                    .isNotEmpty &&
+                                _passwordController.text.trim().isNotEmpty) {
+                              _login();
+                            }
                             AppFunction.showLoading(context);
                             await Future.delayed(
                                 const Duration(milliseconds: 1500));
-                            Navigator.pushNamed(
-                              context,
-                              AppRouters.dashBoard,
-                            );
                             AppFunction.hideLoading(context);
                           },
                         ),

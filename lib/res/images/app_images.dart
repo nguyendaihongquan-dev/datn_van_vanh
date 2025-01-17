@@ -20,6 +20,6 @@ class AppImages {
   static const disableIcon="${imagePath}disable_ic.png";
   static const protectIcon="${imagePath}protect_ic.png";
   static const successIcon="${imagePath}success_ic.png";
-  
+  static const starIcon ="${imagePath}star.png";
 
 }

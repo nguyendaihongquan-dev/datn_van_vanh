@@ -1,6 +1,9 @@
 import 'package:datn_van_vanh/res/colors/app_colors.dart';
 import 'package:datn_van_vanh/res/images/app_images.dart';
+import 'package:datn_van_vanh/screens/history/history_screen.dart';
 import 'package:datn_van_vanh/screens/home/home_screen.dart';
+import 'package:datn_van_vanh/screens/setting/setting_screen.dart';
+import 'package:datn_van_vanh/screens/user_profile/user_profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatefulWidget {
@@ -15,12 +18,11 @@ class _DashboardState extends State<Dashboard>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
-  final List<Widget> _children = [
+  final List<Widget> _children = const [
     HomeScreen(),
-    Container(),
-    Container(),
-    // RoutineHomeScreen(),
-    Container(),
+    UserProfileScreen(),
+    HistoryScreen(),
+    SettingScreen(),
   ];
 
   @override
