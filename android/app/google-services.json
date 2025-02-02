@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "692296108761",
-    "project_id": "smartparking-bf0a0",
-    "storage_bucket": "smartparking-bf0a0.firebasestorage.app"
+    "project_number": "811572822581",
+    "firebase_url": "https://smartparkingsystem-f9fdd-default-rtdb.firebaseio.com",
+    "project_id": "smartparkingsystem-f9fdd",
+    "storage_bucket": "smartparkingsystem-f9fdd.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:692296108761:android:a724e518f06f18362accc8",
+        "mobilesdk_app_id": "1:811572822581:android:21e715cff3594d74e3a77c",
         "android_client_info": {
           "package_name": "com.example.datn_van_vanh"
         }
@@ -15,26 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDm3Z1lvVKgMXgZP4uTxFvxnVtCm0CfRYc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:692296108761:android:709f43e225e4389f2accc8",
-        "android_client_info": {
-          "package_name": "com.example.datnVanVanh"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDm3Z1lvVKgMXgZP4uTxFvxnVtCm0CfRYc"
+          "current_key": "AIzaSyDp0-RihusVr3JxZGP3Ywu7g8sK2giFiVk"
         }
       ],
       "services": {

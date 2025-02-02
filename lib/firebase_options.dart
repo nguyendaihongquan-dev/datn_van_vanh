@@ -41,47 +41,52 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyArsBq4BbNpkT35cm45lLZWt3QMH8cyon0',
-    appId: '1:692296108761:web:82de3ac889687c012accc8',
-    messagingSenderId: '692296108761',
-    projectId: 'smartparking-bf0a0',
-    authDomain: 'smartparking-bf0a0.firebaseapp.com',
-    storageBucket: 'smartparking-bf0a0.firebasestorage.app',
+    apiKey: 'AIzaSyCPdW9jcXHwzFWvY86nGJORllpNDRn35zI',
+    appId: '1:811572822581:web:ce6368941b219bcde3a77c',
+    messagingSenderId: '811572822581',
+    projectId: 'smartparkingsystem-f9fdd',
+    authDomain: 'smartparkingsystem-f9fdd.firebaseapp.com',
+    databaseURL: 'https://smartparkingsystem-f9fdd-default-rtdb.firebaseio.com',
+    storageBucket: 'smartparkingsystem-f9fdd.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDm3Z1lvVKgMXgZP4uTxFvxnVtCm0CfRYc',
-    appId: '1:692296108761:android:709f43e225e4389f2accc8',
-    messagingSenderId: '692296108761',
-    projectId: 'smartparking-bf0a0',
-    storageBucket: 'smartparking-bf0a0.firebasestorage.app',
+    apiKey: 'AIzaSyDp0-RihusVr3JxZGP3Ywu7g8sK2giFiVk',
+    appId: '1:811572822581:android:21e715cff3594d74e3a77c',
+    messagingSenderId: '811572822581',
+    projectId: 'smartparkingsystem-f9fdd',
+    databaseURL: 'https://smartparkingsystem-f9fdd-default-rtdb.firebaseio.com',
+    storageBucket: 'smartparkingsystem-f9fdd.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAABEWpWzzR-BgxKK0iTBHDZ7U7QkDwbQU',
-    appId: '1:692296108761:ios:dae5009f5554f9f42accc8',
-    messagingSenderId: '692296108761',
-    projectId: 'smartparking-bf0a0',
-    storageBucket: 'smartparking-bf0a0.firebasestorage.app',
+    apiKey: 'AIzaSyBVQegubFajHZJDQ1hFIa0R482G5xP7W8I',
+    appId: '1:811572822581:ios:7da0788fdbc95d51e3a77c',
+    messagingSenderId: '811572822581',
+    projectId: 'smartparkingsystem-f9fdd',
+    databaseURL: 'https://smartparkingsystem-f9fdd-default-rtdb.firebaseio.com',
+    storageBucket: 'smartparkingsystem-f9fdd.firebasestorage.app',
     iosBundleId: 'com.example.datnVanVanh',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAABEWpWzzR-BgxKK0iTBHDZ7U7QkDwbQU',
-    appId: '1:692296108761:ios:dae5009f5554f9f42accc8',
-    messagingSenderId: '692296108761',
-    projectId: 'smartparking-bf0a0',
-    storageBucket: 'smartparking-bf0a0.firebasestorage.app',
+    apiKey: 'AIzaSyBVQegubFajHZJDQ1hFIa0R482G5xP7W8I',
+    appId: '1:811572822581:ios:7da0788fdbc95d51e3a77c',
+    messagingSenderId: '811572822581',
+    projectId: 'smartparkingsystem-f9fdd',
+    databaseURL: 'https://smartparkingsystem-f9fdd-default-rtdb.firebaseio.com',
+    storageBucket: 'smartparkingsystem-f9fdd.firebasestorage.app',
     iosBundleId: 'com.example.datnVanVanh',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyArsBq4BbNpkT35cm45lLZWt3QMH8cyon0',
-    appId: '1:692296108761:web:1c19c809f8dd5a032accc8',
-    messagingSenderId: '692296108761',
-    projectId: 'smartparking-bf0a0',
-    authDomain: 'smartparking-bf0a0.firebaseapp.com',
-    storageBucket: 'smartparking-bf0a0.firebasestorage.app',
+    apiKey: 'AIzaSyCPdW9jcXHwzFWvY86nGJORllpNDRn35zI',
+    appId: '1:811572822581:web:a1c1d77c08ba9f74e3a77c',
+    messagingSenderId: '811572822581',
+    projectId: 'smartparkingsystem-f9fdd',
+    authDomain: 'smartparkingsystem-f9fdd.firebaseapp.com',
+    databaseURL: 'https://smartparkingsystem-f9fdd-default-rtdb.firebaseio.com',
+    storageBucket: 'smartparkingsystem-f9fdd.firebasestorage.app',
   );
 
 }
