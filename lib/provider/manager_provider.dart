@@ -19,10 +19,11 @@ class ManagerProvider extends ChangeNotifier {
     });
   }
 
-  void toggleSwitch(ValueNotifier<bool> status) {
-    final newValue = !status.value;
-    databaseReference.set(newValue).then((_) {
-      status.value = newValue;
-    });
+  int space = 0;
+  void updateSpace(int value) {
+    space = value;
+    notifyListeners();
   }
+
+  
 }
