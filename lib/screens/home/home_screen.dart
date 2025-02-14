@@ -361,960 +361,998 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ),
                                     ),
                                   ),
-                                  // Padding(
-                                  //   padding: const EdgeInsets.symmetric(
-                                  //       vertical: 16, horizontal: 16),
-                                  //   child: Container(
-                                  //     padding: const EdgeInsets.all(16),
-                                  //     decoration: BoxDecoration(
-                                  //       borderRadius: BorderRadius.circular(6),
-                                  //       color: AppColors.defaultColor,
-                                  //     ),
-                                  //     child: Row(
-                                  //       mainAxisAlignment:
-                                  //           MainAxisAlignment.spaceBetween,
-                                  //       children: [
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A4,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A4);
-                                  //               },
-                                  //               child: A5.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A4",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A5,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A5);
-                                  //               },
-                                  //               child: A5.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A5",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A6,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A6);
-                                  //               },
-                                  //               child: A6.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A6",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //       ],
-                                  //     ),
-                                  //   ),
-                                  // ),
-                                  // Padding(
-                                  //   padding: const EdgeInsets.symmetric(
-                                  //       vertical: 16, horizontal: 16),
-                                  //   child: Container(
-                                  //     padding: const EdgeInsets.all(16),
-                                  //     decoration: BoxDecoration(
-                                  //       borderRadius: BorderRadius.circular(6),
-                                  //       color: AppColors.defaultColor,
-                                  //     ),
-                                  //     child: Row(
-                                  //       mainAxisAlignment:
-                                  //           MainAxisAlignment.spaceBetween,
-                                  //       children: [
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A7,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A7);
-                                  //               },
-                                  //               child: A7.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A7",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A8,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A8);
-                                  //               },
-                                  //               child: A8.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A8",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A9,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A9);
-                                  //               },
-                                  //               child: A9.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A9",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //       ],
-                                  //     ),
-                                  //   ),
-                                  // ),
-                                  // Padding(
-                                  //   padding: const EdgeInsets.symmetric(
-                                  //       vertical: 16, horizontal: 16),
-                                  //   child: Container(
-                                  //     padding: const EdgeInsets.all(16),
-                                  //     decoration: BoxDecoration(
-                                  //       borderRadius: BorderRadius.circular(6),
-                                  //       color: AppColors.defaultColor,
-                                  //     ),
-                                  //     child: Row(
-                                  //       mainAxisAlignment:
-                                  //           MainAxisAlignment.spaceBetween,
-                                  //       children: [
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A10,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A10);
-                                  //               },
-                                  //               child: A10.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A10",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A11,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A11);
-                                  //               },
-                                  //               child: A11.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A11",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //         ValueListenableBuilder<bool>(
-                                  //           valueListenable: A12,
-                                  //           builder: (BuildContext context,
-                                  //               bool value, Widget? child) {
-                                  //             return GestureDetector(
-                                  //               onTap: () {
-                                  //                 manage.toggleSwitch(A12);
-                                  //               },
-                                  //               child: A12.value
-                                  //                   ? Image.asset(
-                                  //                       AppImages.carIcon,
-                                  //                       width: 28,
-                                  //                       height: 28,
-                                  //                     )
-                                  //                   : Container(
-                                  //                       padding:
-                                  //                           const EdgeInsets
-                                  //                               .all(8),
-                                  //                       // width: 28,
-                                  //                       // height: 28,
-                                  //                       decoration:
-                                  //                           BoxDecoration(
-                                  //                         borderRadius:
-                                  //                             BorderRadius
-                                  //                                 .circular(12),
-                                  //                         color: Colors.green,
-                                  //                       ),
-                                  //                       child: Text(
-                                  //                         "A12",
-                                  //                         style: AppFonts
-                                  //                             .openSansMedium500(
-                                  //                           14,
-                                  //                           Colors.white,
-                                  //                         ),
-                                  //                       ),
-                                  //                     ),
-                                  //             );
-                                  //           },
-                                  //         ),
-                                  //       ],
-                                  //     ),
-                                  //   ),
-                                  // ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[3],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {},
+                                                child: _parkingSlotService
+                                                        .slots[3].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A4",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[4],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {},
+                                                child: _parkingSlotService
+                                                        .slots[3].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A5",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[5],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A6);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[5].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A6",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[6],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A7);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[6].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A7",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[7],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A8);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[7].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A8",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[8],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A9);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[8].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A9",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[9],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A10);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[9].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A10",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[10],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A11);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[10].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A11",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[11],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A12);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[11].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A12",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
-                            // Container(
-                            //   height: 350,
-                            //   width: 1,
-                            //   decoration: const BoxDecoration(
-                            //     color: Colors.black54,
-                            //   ),
-                            // ),
-                            // Expanded(
-                            //   child: Column(
-                            //     children: <Widget>[
-                            //       Padding(
-                            //         padding: const EdgeInsets.symmetric(
-                            //             vertical: 16, horizontal: 16),
-                            //         child: Container(
-                            //           padding: const EdgeInsets.all(16),
-                            //           decoration: BoxDecoration(
-                            //             borderRadius: BorderRadius.circular(6),
-                            //             color: AppColors.defaultColor,
-                            //           ),
-                            //           child: Row(
-                            //             mainAxisAlignment:
-                            //                 MainAxisAlignment.spaceBetween,
-                            //             children: [
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A13,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A13);
-                            //                     },
-                            //                     child: A13.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A13",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A14,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A14);
-                            //                     },
-                            //                     child: A14.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A14",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A15,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A15);
-                            //                     },
-                            //                     child: A15.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A15",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //             ],
-                            //           ),
-                            //         ),
-                            //       ),
-                            //       Padding(
-                            //         padding: const EdgeInsets.symmetric(
-                            //             vertical: 16, horizontal: 16),
-                            //         child: Container(
-                            //           padding: const EdgeInsets.all(16),
-                            //           decoration: BoxDecoration(
-                            //             borderRadius: BorderRadius.circular(6),
-                            //             color: AppColors.defaultColor,
-                            //           ),
-                            //           child: Row(
-                            //             mainAxisAlignment:
-                            //                 MainAxisAlignment.spaceBetween,
-                            //             children: [
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A16,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A16);
-                            //                     },
-                            //                     child: A16.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A16",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A17,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A17);
-                            //                     },
-                            //                     child: A17.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A17",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A18,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A18);
-                            //                     },
-                            //                     child: A18.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A18",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //             ],
-                            //           ),
-                            //         ),
-                            //       ),
-                            //       Padding(
-                            //         padding: const EdgeInsets.symmetric(
-                            //             vertical: 16, horizontal: 16),
-                            //         child: Container(
-                            //           padding: const EdgeInsets.all(16),
-                            //           decoration: BoxDecoration(
-                            //             borderRadius: BorderRadius.circular(6),
-                            //             color: AppColors.defaultColor,
-                            //           ),
-                            //           child: Row(
-                            //             mainAxisAlignment:
-                            //                 MainAxisAlignment.spaceBetween,
-                            //             children: [
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A19,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A19);
-                            //                     },
-                            //                     child: A19.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A19",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A20,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A20);
-                            //                     },
-                            //                     child: A20.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A20",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A21,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A21);
-                            //                     },
-                            //                     child: A21.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A21",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //             ],
-                            //           ),
-                            //         ),
-                            //       ),
-                            //       Padding(
-                            //         padding: const EdgeInsets.symmetric(
-                            //             vertical: 16, horizontal: 16),
-                            //         child: Container(
-                            //           padding: const EdgeInsets.all(16),
-                            //           decoration: BoxDecoration(
-                            //             borderRadius: BorderRadius.circular(6),
-                            //             color: AppColors.defaultColor,
-                            //           ),
-                            //           child: Row(
-                            //             mainAxisAlignment:
-                            //                 MainAxisAlignment.spaceBetween,
-                            //             children: [
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A22,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A22);
-                            //                     },
-                            //                     child: A22.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A22",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A23,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A23);
-                            //                     },
-                            //                     child: A23.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A23",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //               ValueListenableBuilder<bool>(
-                            //                 valueListenable: A24,
-                            //                 builder: (BuildContext context,
-                            //                     bool value, Widget? child) {
-                            //                   return GestureDetector(
-                            //                     onTap: () {
-                            //                       manage.toggleSwitch(A24);
-                            //                     },
-                            //                     child: A24.value
-                            //                         ? Image.asset(
-                            //                             AppImages.carIcon,
-                            //                             width: 28,
-                            //                             height: 28,
-                            //                           )
-                            //                         : Container(
-                            //                             padding:
-                            //                                 const EdgeInsets
-                            //                                     .all(8),
-                            //                             // width: 28,
-                            //                             // height: 28,
-                            //                             decoration:
-                            //                                 BoxDecoration(
-                            //                               borderRadius:
-                            //                                   BorderRadius
-                            //                                       .circular(12),
-                            //                               color: Colors.green,
-                            //                             ),
-                            //                             child: Text(
-                            //                               "A24",
-                            //                               style: AppFonts
-                            //                                   .openSansMedium500(
-                            //                                 14,
-                            //                                 Colors.white,
-                            //                               ),
-                            //                             ),
-                            //                           ),
-                            //                   );
-                            //                 },
-                            //               ),
-                            //             ],
-                            //           ),
-                            //         ),
-                            //       ),
-                            //     ],
-                            //   ),
-                            // ),
+                            Container(
+                              height: 350,
+                              width: 1,
+                              decoration: const BoxDecoration(
+                                color: Colors.black54,
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[12],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A13);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[12].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A13",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[13],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A14);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[13].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A14",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[14],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A15);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[14].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A15",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[15],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A16);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[15].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A16",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[16],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A17);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[16].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A17",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[17],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A18);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[17].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A18",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[18],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A19);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[18].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A19",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[19],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A20);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[19].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A20",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[20],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A21);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[20].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A21",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16, horizontal: 16),
+                                    child: Container(
+                                      padding: const EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: AppColors.defaultColor,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[21],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A22);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[21].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A22",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[22],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A23);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[22].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A23",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                          ValueListenableBuilder<bool>(
+                                            valueListenable:
+                                                _parkingSlotService.slots[23],
+                                            builder: (BuildContext context,
+                                                bool value, Widget? child) {
+                                              return GestureDetector(
+                                                onTap: () {
+                                                  // manage.toggleSwitch(A24);
+                                                },
+                                                child: _parkingSlotService
+                                                        .slots[23].value
+                                                    ? Image.asset(
+                                                        AppImages.carIcon,
+                                                        width: 28,
+                                                        height: 28,
+                                                      )
+                                                    : Container(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8),
+                                                        // width: 28,
+                                                        // height: 28,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(12),
+                                                          color: Colors.green,
+                                                        ),
+                                                        child: Text(
+                                                          "A24",
+                                                          style: AppFonts
+                                                              .openSansMedium500(
+                                                            14,
+                                                            Colors.white,
+                                                          ),
+                                                        ),
+                                                      ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ],
